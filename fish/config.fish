@@ -1,17 +1,18 @@
 if status is-interactive
 # Commands to run in interactive sessions can go here
-#-------- START
-set fish_greeting
-##################################
-###~~~ Fish Function Folder ~~~###
-##################################
+#
+loonascripts -r
+#
+neofetch --config ~/.config/neofetch/neofetch-themes-main/small/minecraftfetch/config.conf
+#========
+#fish functions
+#
+
+init_fish
+executables
+zoxide_config
 alias_fish
-ls_color 
-##################################
-###~~~     exacutables      ~~~###
-set PATH $PATH ~/data/codes/c/cx
-set PATH $PATH /home/rajnish/.local/bin
-##################################
-clear
-# neofetch --config /home/rajnish/.config/neofetch/neofetch-themes-main/small/minecraftfetch/config.conf
+ls_color
+
+#
 end
