@@ -4,7 +4,8 @@ if status is-interactive
 loonascripts -r
 #
 neofetch --config ~/.config/neofetch/neofetch-themes-main/small/minecraftfetch/config.conf
-#========
+figlet rajnish -c
+  #========
 #fish functions
 #
 

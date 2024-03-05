@@ -2,7 +2,9 @@ function alias_fish
 alias s='sudo'
 alias zypper='sudo zypper'
 alias szypp='sudo zypper'
-
+#=======================================
+# sys basic
+alias clear='ok'
 alias ls='eza --icons -1 -a'
 alias la='eza -a --icons -1'
 alias ll='eza -lah --icons'
