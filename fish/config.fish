@@ -2,6 +2,7 @@ if status is-interactive
 # Commands to run in interactive sessions can go here
 #
 loonascripts -r
+echo 
 #
 neofetch --config ~/.config/neofetch/neofetch-themes-main/small/minecraftfetch/config.conf
 figlet rajnish -c
