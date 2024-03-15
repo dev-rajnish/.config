@@ -4,10 +4,12 @@ alias zypper='sudo zypper'
 alias szypp='sudo zypper'
 #=======================================
 # sys basic
+alias cpwd='echo -----------------------------;echo at : $PWD;echo -----------------------------'
+alias batc='bat --theme "Monokai Extended" --paging never --style=grid,header'
 alias ok='clear'
-alias ls='eza --icons -1 -a'
-alias l='ls'
-alias ll='eza -lah --icons'
+alias ls='cpwd ; eza --icons -1 -a ; cpwd'
+alias l='cpwd ; ls ; cpwd'
+alias ll='cpwd ; eza -lah --icons ; cpwd'
 alias rm='rm -i'
 alias batc='bat --theme "Monokai Extended" --paging never --style=grid,header'
 
@@ -30,7 +32,6 @@ alias zc='z ~/data/codes/'
 alias cl='clear; ls -a' 
 alias clearx='clear -x'
 
-alias dwagent='cd ~/Public/ && sudo ./dwagent.sh'
 alias live='live-server --port=8090 --wait=1 & sleep 1 && ngrok start --all'
 
 end 
