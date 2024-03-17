@@ -8,7 +8,7 @@ alias cpwd='echo -----------------------------;echo at : $PWD;echo -------------
 alias batc='bat --theme "Monokai Extended" --paging never --style=grid,header'
 alias ok='clear'
 alias ls='cpwd ; eza --icons -1 -a ; cpwd'
-alias l='cpwd ; ls ; cpwd'
+alias l='cpwd ; eza --icons -1 -a  ; cpwd'
 alias ll='cpwd ; eza -lah --icons ; cpwd'
 alias rm='rm -i'
 alias batc='bat --theme "Monokai Extended" --paging never --style=grid,header'
