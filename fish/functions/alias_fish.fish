@@ -14,13 +14,11 @@ alias rm='rm -i'
 alias batc='bat --theme "Monokai Extended" --paging never --style=grid,header'
 
 
-alias vim='lvim'
-alias nvim='lvim'
 alias cx='/home/rajnish/data/codes/c/auto-run-sh/clang-17.sh'
 alias lc='/home/rajnish/data/bash-script/l.sh'
 
-alias add-alias='lvim ~/.config/fish/functions/alias_fish.fish'
-alias fishrc='lvim ~/.config/fish/config.fish'
+alias add-alias='nvim ~/.config/fish/functions/alias_fish.fish'
+alias fishrc='nvim ~/.config/fish/config.fish'
 
 alias cd-c='z ~/data/codes/c/'
 alias code-c='code ~/data/codes/c'
