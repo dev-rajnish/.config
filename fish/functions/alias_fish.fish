@@ -27,5 +27,7 @@ alias clearx='clear -x'
 alias live='live-server --port=8090 --wait=1 & sleep 1 && ngrok start --all'
 alias fish-greet='sudo vim /usr/share/fish/functions/fish_greeting.fish'
 
+## -- tgpt and glow
+alias gpt="$HOME/my/bash-exec/./tgpt.sh"
 #---------------------
 end
