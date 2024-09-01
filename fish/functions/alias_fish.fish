@@ -4,6 +4,10 @@ function alias_fish
 # sys basic
 alias in='$HOME/my/bash-exec/install-with-logging.sh'
 alias un='$HOME/my/bash-exec/uninstall-with-logging.sh'
+## -- git
+alias github='$HOME/my/bash-exec/git-commit-push.sh'
+alias gits='git status'
+alias gita='git add .'
 
 alias my="cd $HOME/my"
 alias cpwd='echo -----------------------------;echo at : $PWD;echo -----------------------------'
