@@ -23,8 +23,5 @@ alias clearx='clear -x'
 alias live='live-server --port=8090 --wait=1 & sleep 1 && ngrok start --all'
 alias fish-greet='sudo vim /usr/share/fish/functions/fish_greeting.fish'
 
-alias yt='firefox --new-window https://youtube.com'
-alias plain='firefox --new-window https://192.168.154.66:8443/'
-
 #---------------------
 end
