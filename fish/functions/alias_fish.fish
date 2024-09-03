@@ -29,5 +29,6 @@ alias fish-greet='sudo vim /usr/share/fish/functions/fish_greeting.fish'
 
 ## -- tgpt and glow
 alias gpt="$HOME/my/bash-exec/./tgpt.sh"
+alias ac="$HOME/my/bash-exec/./auto-command.sh"
 #---------------------
 end
