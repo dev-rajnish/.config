@@ -2,8 +2,8 @@ function alias_fish
 
 #------------------
 # sys basic
-#alias in="$HOME/my/bash-exec/install-with-logging.sh"
-alias un="$HOME/my/bash-exec/uninstall-with-logging.sh"
+alias in="$HOME/my/bash-exec/zypper-log/install-with-logging"
+alias un="$HOME/my/bash-exec/zypper-log/uninstall-with-logging"
 ## -- git
 alias github="f2g"
 alias githuba="f2g ."
