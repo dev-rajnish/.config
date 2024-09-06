@@ -2,34 +2,29 @@ function alias_fish
 
 #------------------
 # sys basic
-alias in='$HOME/my/bash-exec/install-with-logging.sh'
-alias un='$HOME/my/bash-exec/uninstall-with-logging.sh'
+#alias in="$HOME/my/bash-exec/install-with-logging.sh"
+alias un="$HOME/my/bash-exec/uninstall-with-logging.sh"
 ## -- git
-alias github='$HOME/my/bash-exec/git-commit-push.sh'
-alias githuba="$HOME/my/bash-exec/git-commit-all-push.sh"
-alias gits='git status'
-alias gita='git add .'
+alias github="f2g"
+alias githuba="f2g ."
+alias gits="git status"
+alias gita="git add ."
 
 alias my="cd $HOME/my"
-alias cpwd='echo -----------------------------;echo at : $PWD;echo -----------------------------'
-alias batc='bat --theme "Monokai Extended" --paging never --style=grid,header'
-alias ok='clear'
-alias ls='eza --icons -1 -a ; cpwd'
-alias l='eza --icons -1 -a  ; cpwd'
-alias ll='eza -lah --icons ; cpwd'
-alias rm='rm -i'
+alias cpwd="echo -----------------------------;echo At : $PWD;echo ----------------------------"
+alias batc="bat --theme='Monokai Extended' --paging never --style=grid,header"
+alias ok="clear"
+alias ls="eza --icons -1 -a ; cpwd"
+alias l="eza --icons -1 -a  ; cpwd"
+alias ll="eza -lah --icons ; cpwd"
+alias rm="rm -i"
 
-alias add-alias='vim ~/.config/fish/functions/alias_fish.fish'
-alias fishrc='vim ~/.config/fish/config.fish'
+alias add_alias="vim ~/.config/fish/functions/alias_fish.fish"
+alias fishrc="vim ~/.config/fish/config.fish"
 
-alias cl='clear; ls -a' 
-alias clearx='clear -x'
+alias cl="clear; ls -a"
+alias clearx="clear -x"
 
-alias live='live-server --port=8090 --wait=1 & sleep 1 && ngrok start --all'
-alias fish-greet='sudo vim /usr/share/fish/functions/fish_greeting.fish'
-
-## -- tgpt and glow
-alias gpt="$HOME/my/bash-exec/./tgpt.sh"
-alias ac="$HOME/my/bash-exec/./auto-command.sh"
+alias fish_greet="sudo vim /usr/share/fish/functions/fish_greeting.fish"
 #---------------------
 end
