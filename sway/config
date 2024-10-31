@@ -1,0 +1,18 @@
+
+set $mod Mod1
+bindsym $mod+Return exec alacritty
+
+bindsym $mod+m fullscreen toggle
+
+bindsym $mod+q kill
+
+bindsym $mod+Tab focus next
+
+input * {
+	xkb_model "pc105",
+	xkb_layout "us",
+	xkb_variant "dvorak",
+	xkb_options "caps:backspace,alt_l:escape"
+}
+
+exec swaybg -i ~/my/walls/981849.png -m fill
