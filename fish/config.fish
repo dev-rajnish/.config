@@ -1,6 +1,6 @@
 if status is-interactive
     #------------------------
-    
+    executables
     init_fish
     ls_color
 
