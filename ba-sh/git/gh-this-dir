@@ -1,0 +1,36 @@
+#!/bin/bash
+
+REPO_NAME="$(basename "$PWD")"
+USER="$(git config --get user.name)"
+GH_REPO_LINK="https://github.com/$USER/$REPO_NAME.git"
+VISIBILITY="--public"
+
+# Check if it's a git repository
+if [ -d ".git" ]; then
+    # Refresh index to detect any changes
+    #git update-index --ignore-submodules --refresh
+
+    # Check if there are any staged, modified, or untracked files
+    if git status --porcelain | grep -q .; then
+        echo "Changes detected. Automatically staging changes..."
+
+        # Create GitHub repository if it doesn’t already exist
+        gh repo create "$REPO_NAME" "$VISIBILITY" 2>/dev/null
+
+        # Show the status for reference
+        git status -sbv
+
+        # Add and commit changes
+        git add -i
+        git commit -m "Auto Commit and Push"
+
+        # Set the remote origin and push to GitHub
+        git remote add origin "$GH_REPO_LINK" 2>/dev/null
+        git push -u origin master || git push --force -u origin master \
+        || echo "Changes committed but code not pushed to GitHub."
+    else
+        echo "No changes detected in the repository. Nothing to add."
+    fi
+else
+    echo "This directory is not a git repository."
+fi

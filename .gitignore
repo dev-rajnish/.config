@@ -2,7 +2,8 @@
 !.gitignore
 !xdg-terminals.list
 
-
+!ba-sh/
+!ba-sh/**
 
 !fish/
 !fish/**
