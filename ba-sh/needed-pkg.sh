@@ -21,7 +21,7 @@ glow \
 bat \
 eza \
 zoxide \
-libnotify- tools \
+libnotify-tools \
 wlr-randr \
 gcc \
 wl-clipboard \
