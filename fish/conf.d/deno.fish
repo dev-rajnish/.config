@@ -1,1 +1,2 @@
-source "/home/rajnish/.deno/env.fish"
+#source "/home/rajnish/.deno/env.fish"
+
