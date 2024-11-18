@@ -27,4 +27,9 @@ gcc \
 wl-clipboard \
 
 
+echo "Installing getnf -- for installing nerd-fonts"
+curl -fsSL https://raw.githubusercontent.com/getnf/getnf/main/install.sh | bash
+getnf
+
+
 
