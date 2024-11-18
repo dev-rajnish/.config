@@ -7,9 +7,6 @@ if status is-interactive
     #+======================
     source ~/.config/fish/source_file.fish
 
-    alias_fish
-    alias_web_app
-
     #--------------------------
 end
 

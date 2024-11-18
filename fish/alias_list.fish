@@ -24,3 +24,4 @@ alias ls "eza --icons -1 -a"
 alias l "eza --icons -1 -a"
 alias ll "eza -lah --icons"
 alias rm "rm -i"
+ alias c 'cd ~/.config && nvim'
