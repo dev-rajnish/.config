@@ -39,6 +39,10 @@ getnf
 #=====
 echo "| 4. | Moving to .config/"
 cd ~/.config/
+git config --global user.name "dev-rajnish"
+git config --global user.email "dev.rajnish@proton.me"
+git config --global credential.helper store
+
 git init
 git remote add origin "https://github.com/dev-rajnish/.config.git"
 
