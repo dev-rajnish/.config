@@ -28,7 +28,8 @@ sudo zypper in --no-recommends --details -y \
   gcc \
   wl-clipboard \
   breeze6-cursor \
-  hyprcursor
+  hyprcursor \
+  grim
 
 #=====
 echo "| 3. | Installing getnf -- for installing nerd-fonts"
@@ -50,3 +51,7 @@ mkdir -p before-needed-pkg
 echo "| 6. | cleaning .config for fetch/pull"
 mv mako/ walls/ -t before-needed-pkg && echo cleaned ||
   echo "==X=X== | Error cleaning "
+
+git pull origin master
+
+bash ~/.config/ba-sh/install.sh
