@@ -48,13 +48,10 @@ git remote add origin "https://github.com/dev-rajnish/.config.git"
 
 #======
 ## -- cleaning .config for fetch/pull
-echo "| 5. | mkdir -p ~/.config/before-needed-pkg"
-mkdir -p before-needed-pkg
+echo "| 5. |"
 
 #======
-echo "| 6. | cleaning .config for fetch/pull"
-mv mako/ walls/ -t before-needed-pkg && echo cleaned ||
-  echo "==X=X== | Error cleaning "
+echo "| 6. |"
 
 git pull origin master
 
