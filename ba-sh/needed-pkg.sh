@@ -49,4 +49,4 @@ mkdir -p before-needed-pkg
 #======
 echo "| 6. | cleaning .config for fetch/pull"
 mv mako/ walls/ -t before-needed-pkg && echo cleaned ||
-  echo "==X=X== | Error cleaning"
+  echo "==X=X== | Error cleaning "
