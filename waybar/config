@@ -5,7 +5,7 @@
   "spacing": 5,
   "modules-left": ["hyprland/workspaces","sway/mode"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["custom/wallpaper","idle_inhibitor","network","cpu","memory","battery","backlight","pulseaudio","clock","tray"],
+  "modules-right": ["custom/swaync","custom/wallpaper","idle_inhibitor","network","cpu","memory","battery","backlight","pulseaudio","clock","tray"],
   "hyprland/mode": {
     "format": "{}"
   },
@@ -14,6 +14,14 @@
   "hyprland/window": {
     "format": "{title}"
   },
+
+"custom/swaync": {
+"format": "   ",
+"on-click": "~/.config/swaync/scripts/tray_waybar.sh",
+    "on-click-right": "swaync-client -C",
+    "on-click-middle": "~/.config/swaync/scripts/notify_count.sh",
+"tooltip": false,
+    },
 
 "custom/wallpaper":{
         "tooltip":false,
