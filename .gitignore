@@ -29,5 +29,8 @@
 !mako/
 !mako/**
 
+!swaync/
+!swaync/**
+
 !walls/
 !walls/1.jpeg
