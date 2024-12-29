@@ -26,6 +26,9 @@
 !fuzzel/
 !fuzzel/**
 
+!xplr/
+!xplr/**
+
 !swaync/
 !swaync/**
 
