@@ -21,15 +21,17 @@ window#waybar.hidden {
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: none;
-  color: transparent;
+  font-size: 28px;
+  color: black;
 	background: transparent;
 }
 
 #workspaces button {
-	background-color: #40534C;
+	background-color: #637899;
 	color: white;
 	margin-top: 4px;
   margin-bottom: 4px;
+  margin-left: 6px;
 
 }
 
@@ -148,6 +150,7 @@ window#waybar.hidden {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 4px;
+  margin-right: 6px;
 	transition: none;
 	color: #161320;
 	background: #ABE9B3;

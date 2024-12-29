@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-killall swaync
-pkill swaync
+kill mako
 sleep 0.1
 swaync -c
