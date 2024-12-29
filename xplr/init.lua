@@ -84,7 +84,7 @@ xplr.config.general.read_only = false
 -- from yourself when you type recklessly.
 --
 -- Type: boolean
-xplr.config.general.enable_recover_mode = false
+xplr.config.general.enable_recover_mode = true
 
 -- Set it to `true` if you want to hide all remaps in the help menu.
 --
@@ -94,7 +94,7 @@ xplr.config.general.hide_remaps_in_help_menu = false
 -- Set it to `true` if you want paginated scrolling.
 --
 -- Type: boolean
-xplr.config.general.paginated_scrolling = false
+xplr.config.general.paginated_scrolling = true
 
 -- Set the padding value to the scroll area.
 -- Only applicable when `xplr.config.general.paginated_scrolling = false`.
