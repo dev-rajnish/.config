@@ -12,10 +12,6 @@ alias xplr 'xplr --print-pwd-as-result'
 
 alias f 'cd $(xplr --print-pwd-as-result)'
 
-alias nvim 'nvim . &&  gh-this-dir'
-
-alias fe 'f && nvim'
-
 alias my "cd $HOME/my || mkdir -p $HOME/my/ && cd $HOME/my  "
 alias mcd 'mkdir -p $1 && cd $1'
 alias batc "bat --theme='Monokai Extended' --paging never --style=grid,header"
@@ -24,4 +20,3 @@ alias ls "eza --icons -1 -a"
 alias l "eza --icons -1 -a"
 alias ll "eza -lah --icons"
 alias rm "rm -i"
- alias c 'cd ~/.config && nvim'

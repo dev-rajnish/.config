@@ -39,7 +39,8 @@
   "network": {
 	"tooltip": false,
 	"format-wifi": "    {essid}",
-	"format-ethernet": ""
+	"format-ethernet": "",
+  "on-click" : "kitty --hold metaai"
 	},
 
 "backlight": {

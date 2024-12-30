@@ -1,6 +1,7 @@
 *
 !.gitignore
 !xdg-terminals.list
+!starship.toml
 
 !ba-sh/
 !ba-sh/**
@@ -31,6 +32,10 @@
 
 !swaync/
 !swaync/**
+
+!zellij/
+!zellij/**
+
 
 !walls/
 !walls/1.jpeg

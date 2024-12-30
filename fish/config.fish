@@ -3,9 +3,11 @@ if status is-interactive
     executables
     init_fish
     ls_color
-
+    utheme
     #+======================
     source ~/.config/fish/source_file.fish
+
+
 
     #--------------------------
 end
