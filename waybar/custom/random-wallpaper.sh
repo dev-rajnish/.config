@@ -2,4 +2,4 @@
 
 WALLPAPER="$(find $HOME/.config/walls/ -type f | shuf -n 1)"
 
-swww img -t random "$WALLPAPER" &
+swww img "$WALLPAPER" &

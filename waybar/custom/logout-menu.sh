@@ -3,15 +3,12 @@
 # Define options with corresponding icons
 options="    Lock Screen\n    Logout\n    Shutdown\n    Restart"
 
-# Display the options in a grid with wofi
-selected_option=$(echo -e "$options" | fuzzel --dmenu --prompt "Select an action:")
-#--width 300 -L 6 -c ~/.config/wofi/config -s ~/.config/wofi/style.css)
+selected_option=$(echo -e "$options" | fuzzel -l 5 -w 14 --dmenu --prompt "Select an action : ")
 
 # Function to display the confirmation prompt
 confirmation_prompt() {
   action=$1
-  confirmation=$(echo -e "Yes\nNo" | fuzzel --dmenu --prompt "Are you sure to $action?")
-  #--width 300 -L 6 -c ~/.config/wofi/config -s ~/.config/wofi/style.css)
+  confirmation=$(echo -e "Yes\nNo" | fuzzel --dmenu -l 3 -w 12 --prompt "Confirm  to $action ? ")
 
   if [ "$confirmation" == "Yes" ]; then
     echo "Proceeding with $action..."
@@ -25,10 +22,7 @@ confirmation_prompt() {
 # Execute the selected option
 case "$selected_option" in
 "    Lock Screen")
-  # Lock the screen with i3lock or swaylock
-  #i3lock -c 000000  # Replace with `swaylock` if using Sway
-  # For sway, use:
-  swaylock -c 000011
+  hyprlock -c ~/.config/hypr/hyprlock.conf
   ;;
 "    Logout")
   # Ask for confirmation before logging out

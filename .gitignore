@@ -1,6 +1,8 @@
 *
 !.gitignore
+
 !xdg-terminals.list
+
 !starship.toml
 
 !ba-sh/
@@ -9,33 +11,39 @@
 !fish/
 !fish/**
 
+
+!fuzzel/
+!fuzzel/**
+
+!hypr/
+!hypr/**
+
 !kitty/
 !kitty/**
 
 !nvim/
 !nvim/**
 
-!hypr/
-!hypr/**
-
 !sway/
 !sway/**
-
-!waybar/
-!waybar/**
-
-!fuzzel/
-!fuzzel/**
-
-!xplr/
-!xplr/**
 
 !swaync/
 !swaync/**
 
+
+!waybar/
+!waybar/**
+
+!xplr/
+!xplr/**
+
+!yazi/
+!yazi/**
+
+
 !zellij/
 !zellij/**
 
-
 !walls/
-!walls/1.jpeg
+!walls/**
+
