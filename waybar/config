@@ -62,6 +62,8 @@
   "memory": {
     "interval": 30,
      "format": "   {}%",
+        "on-click": "bash ~/.config/waybar/custom/logout-menu.sh",
+
   },
 
 
