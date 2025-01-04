@@ -20,3 +20,5 @@ alias ls "eza --icons -1 -a"
 alias l "eza --icons -1 -a"
 alias ll "eza -lah --icons"
 alias rm "rm -i"
+alias k "sudo kmonad ~/.config/kmonad/config.kbd"
+

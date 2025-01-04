@@ -11,8 +11,8 @@ set $mod Mod1
 
 input * {
 xkb_layout "us"
-xkb_variant "dvorak"
-xkb_options "caps:swapescape"
+#xkb_variant "dvorak"
+#xkb_options "caps:swapescape"
 }
 
 input "type:touchpad" {
@@ -29,8 +29,9 @@ set $term2 kitty
 # Your preferred application launcher
 set $menu fuzzel
 
-exec waybar
-exec mako --default-timeout 5000
+exec waybar &
+exec swaync &
+exec swww-daemon &
 
 #####
 
@@ -45,7 +46,7 @@ client.focused #FC8F54 #FC8F54 #FC8F54 #FC8F54
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/my/wall-01.jpg fill
+#output * bg ~/my/wall-01.jpg fill
 #
 # Example configuration:
 #
@@ -88,7 +89,7 @@ output * bg ~/my/wall-01.jpg fill
     bindsym $mod+Return exec $term2
     
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+Shift+q swaymsg kill
 
     # Start your launcher
     bindsym $mod+m exec $menu
