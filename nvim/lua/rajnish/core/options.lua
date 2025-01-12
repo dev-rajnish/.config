@@ -1,5 +1,4 @@
 local opt = vim.opt -- for conciseness
-
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
@@ -11,7 +10,9 @@ opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+opt.wrap = true -- disable line wrapping
+opt.linebreak = true
+opt.textwidth = 100
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -40,3 +41,4 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
