@@ -35,7 +35,7 @@ bspc    x     l    d    j    q    z    .    h    -     ;     ,       =     \
 
 lsft    c     m    b    w    /    p    f    k    '     v     rsft  up
 
-lctl    fn    @num-a lalt           @ark            ralt rctl  left    down  rght
+@num-a    fn    lmet lalt           @ark            ralt rctl  left    down  rght
 
 
 )
@@ -82,8 +82,8 @@ esct (tap-hold-next 250 esc lctl) ;;# tap -> esc ; hold -> lctl
 
 _    _    _    _    _    _    _     _        _      _       _            _    _    _   _   _
 _    _    _    _    _    _    _     _        _      _       _            _    _    @qwe-k
-_    #    $    %    *    !    @     _        up     _       _            _    _    _
-del  \(    {    [    .    =    +   left     down   rght    rght           :    _ 
+del    #    $    %    *    !    @     _        up     _       _            _    _    _
+_    \(    {    [    .    =    +   left     down   rght    rght           :    _ 
 _    \)    }    ]    /    _    _     ,        _      _       ;            _    _ 
 _    _    _    _              spc                           _            _    _    _    _
 
@@ -107,5 +107,4 @@ _    _    @num-r    _              @ark                              _        _ 
 
 
 )
-
 
