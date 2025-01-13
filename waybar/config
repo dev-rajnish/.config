@@ -1,10 +1,11 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 22,
+  "height": 16,
   "spacing": 5,
-  "modules-left": ["hyprland/workspaces", "hyprland/window","sway/mode"],
-  "modules-right": ["custom/swaync","custom/wallpaper","idle_inhibitor","network","cpu","memory","battery","backlight","pulseaudio","clock","tray"],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center" : ["hyprland/window","sway/mode"],
+  "modules-right": ["custom/swaync","custom/wallpaper","idle_inhibitor","network","cpu","memory","battery","backlight","pulseaudio",      "clock","tray"],
   "hyprland/mode": {
     "format": "{}"
   },
@@ -15,20 +16,20 @@
   },
 
 "custom/swaync": {
-"format": "   ",
-"on-click": "~/.config/swaync/scripts/tray_waybar.sh",
+    "format": "   ",
+    "on-click": "~/.config/swaync/scripts/tray_waybar.sh",
     "on-click-right": "swaync-client -C",
     "on-click-middle": "~/.config/swaync/scripts/notify_count.sh",
-"tooltip": false,
-    },
+    "tooltip": false,
+},
 
 "custom/wallpaper":{
         "tooltip":false,
         "format":"   ",
         "on-click": "bash ~/.config/waybar/custom/random-wallpaper.sh"
-    },
+},
 
-  "idle_inhibitor": {
+"idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
       "activated": "\uf06e",
@@ -37,40 +38,40 @@
   },
 
   "network": {
-	"tooltip": false,
-	"format-wifi": "    {essid}",
-	"format-ethernet": "",
-  "on-click" : "kitty --hold metaai"
+	  "tooltip": false,
+	  "format-wifi": "    {essid}",
+	  "format-ethernet": "",
+    "on-click" : "kitty --hold metaai"
 	},
 
 "backlight": {
 	"tooltip": false,
 	"format": "  {}%",
 	"interval":1,
-        "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-up": "brightnessctl set 1%+",
 		"on-scroll-down": "brightnessctl set 1%-"
 	},
 
 
-  "cpu": { 
-    "interval": 10, 
-    "format": "   {}%",
-    "on-click" : "clipman pick -t wofi"
+"cpu": { 
+  "interval": 10, 
+  "format": "   {}%",
+  "on-click" : "clipman pick -t wofi"
   },
 
 
-  "memory": {
-    "interval": 30,
-     "format": "   {}%",
-        "on-click": "bash ~/.config/waybar/custom/logout-menu.sh",
+"memory": {
+  "interval": 30,
+  "format": "   {}%",
+  "on-click": "bash ~/.config/waybar/custom/logout-menu.sh",
 
   },
 
 
-  "battery": {
-    "bat": "BAT0",
-    "states": {
-      "good": 95,
+"battery": {
+  "bat": "BAT0",
+  "states": {
+    "good": 95,
       "warning": 30,
       "critical": 11
     },
@@ -83,7 +84,7 @@
 
 
   "clock": {
-     "format": "{:%I:%M %d/%m/%Y}",
+    "format": "{:%I:%M %d/%m/%Y}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "format": {
@@ -95,12 +96,12 @@
 
 
   "pulseaudio": {
-                "format":"{icon}   {volume}%",
+    "format":"{icon}   {volume}%",
 		"tooltip": false,
 		"scroll-step": 5,
 		"format-muted": "{icon} {volume}%",
 		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
-                "on-click-right": "pavucontrol",
+    "on-click-right": "pavucontrol",
 		"format-icons": ["  ", "  ", "  "]
 		
   },
