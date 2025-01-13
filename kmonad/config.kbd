@@ -7,7 +7,9 @@ fallthrough true
 )
 
 
-;;# SOURCE   
+;; ╭─────────────────────────────────────────────────────────╮
+;; │ SOURCE                                                  │
+;; ╰─────────────────────────────────────────────────────────╯
 ( defsrc 
   
 esc   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11    f12   ins     print    del
@@ -19,10 +21,11 @@ lctl  fn  lmet lalt            spc            ralt rctl left   down  rght
 
 )
 
-
-
-;;# Main Layer
-
+#|
+ ╭───────────────────────────────────────────────────────────╮
+ │ ;;# Main Layer                                            │
+ ╰───────────────────────────────────────────────────────────╯
+|#
 ( deflayer main ;;gallium-v2m
 
 tab    f1    f2   f3   f4   f5   f6   f7   f8   f9    f10   f11     f12    ins    print  XX 
@@ -40,6 +43,9 @@ lsft    c     m    b    w    /    p    f    k    '     v     rsft  up
 
 )
 
+;; ╭─────────────────────────────────────────────────────────╮
+;; │ qwerty layout                                           │
+;; ╰─────────────────────────────────────────────────────────╯
 ( deflayer qwerty
   
 esc   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11    f12   @main-k     print    del
@@ -52,8 +58,9 @@ lctl  fn  lmet lalt            spc            ralt rctl left   down  rght
 )
 
 
-
-;;#  Functions 
+;; ╭─────────────────────────────────────────────────────────╮
+;; │ Functions                                               │
+;; ╰─────────────────────────────────────────────────────────╯
 
 ( defalias
 
@@ -71,11 +78,9 @@ main-k (layer-switch main)
 esct (tap-hold-next 250 esc lctl) ;;# tap -> esc ; hold -> lctl
 
 )
-
-
-;;;;;;;;;;;;;;;;;;;
-
-
+;; ╭─────────────────────────────────────────────────────────╮
+;; │ Arrow key                                               │
+;; ╰─────────────────────────────────────────────────────────╯
 (deflayer arrow-keys
 
 ;;ec f1   f2   f3   f4   f5   f6    f7       f8     f9      f10          f11  f12 ins print del

@@ -1,11 +1,15 @@
 #!/bin/bash
 
-# Define options with corresponding icons
+# ╭──────────────────────────────────────────────────────────╮
+# │ Define options with corresponding icons                  │
+# ╰──────────────────────────────────────────────────────────╯
 options="    Lock Screen\n    Logout\n    Shutdown\n    Restart"
 
 selected_option=$(echo -e "$options" | fuzzel -l 5 -w 14 --dmenu --prompt "Select an action : ")
 
-# Function to display the confirmation prompt
+# ╭──────────────────────────────────────────────────────────╮
+# │ Function to display the confirmation prompt              │
+# ╰──────────────────────────────────────────────────────────╯
 confirmation_prompt() {
   action=$1
   confirmation=$(echo -e "Yes\nNo" | fuzzel --dmenu -l 3 -w 12 --prompt "Confirm  to $action ? ")
@@ -19,7 +23,9 @@ confirmation_prompt() {
   fi
 }
 
-# Execute the selected option
+# ╭──────────────────────────────────────────────────────────╮
+# │ Execute the selected option                              │
+# ╰──────────────────────────────────────────────────────────╯
 case "$selected_option" in
 "    Lock Screen")
   hyprlock -c ~/.config/hypr/hyprlock.conf
