@@ -37,6 +37,9 @@
 !waybar/
 !waybar/**
 
+!wofi/**
+!wofi/
+
 !xplr/
 !xplr/**
 
