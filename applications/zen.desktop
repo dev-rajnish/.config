@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Zen Browser 
+GenericName=Zen Browser
+Comment=Zen
+TryExec=zen
+StartupNotify=true
+Exec=zen
+Icon=zen browser
+Categories=Internet;
