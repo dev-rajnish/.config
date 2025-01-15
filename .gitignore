@@ -5,8 +5,8 @@
 
 !starship.toml
 
-!application/
-!application/**
+!applications/
+!applications/**
 
 !bin/
 !bin/**
