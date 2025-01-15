@@ -3,8 +3,7 @@
   "position": "top",
   "height": 16,
   "spacing": 5,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center" : ["hyprland/window","sway/mode"],
+  "modules-left": ["hyprland/workspaces","hyprland/window","sway/mode"],
   "modules-right": ["custom/swaync","custom/wallpaper","idle_inhibitor","network","cpu","memory","battery","backlight","pulseaudio",      "clock","tray"],
   "hyprland/mode": {
     "format": "{}"
@@ -16,7 +15,7 @@
   },
 
 "custom/swaync": {
-    "format": "   ",
+    "format": " ",
     "on-click": "~/.config/swaync/scripts/tray_waybar.sh",
     "on-click-right": "swaync-client -C",
     "on-click-middle": "~/.config/swaync/scripts/notify_count.sh",
@@ -25,7 +24,7 @@
 
 "custom/wallpaper":{
         "tooltip":false,
-        "format":"   ",
+        "format":" ",
         "on-click": "bash ~/.config/waybar/custom/random-wallpaper.sh"
 },
 
@@ -39,14 +38,14 @@
 
   "network": {
 	  "tooltip": false,
-	  "format-wifi": "    {essid}",
+	  "format-wifi": "󰤥 {essid}",
 	  "format-ethernet": "",
     "on-click" : "kitty --hold metaai"
 	},
 
 "backlight": {
 	"tooltip": false,
-	"format": "  {}%",
+	"format": " {}%",
 	"interval":1,
     "on-scroll-up": "brightnessctl set 1%+",
 		"on-scroll-down": "brightnessctl set 1%-"
@@ -55,14 +54,14 @@
 
 "cpu": { 
   "interval": 10, 
-  "format": "   {}%",
+  "format": "  {}%",
   "on-click" : "clipman pick -t wofi"
   },
 
 
 "memory": {
   "interval": 30,
-  "format": "   {}%",
+  "format": "  {}%",
   "on-click": "bash ~/.config/waybar/custom/logout-menu.sh",
 
   },
@@ -75,9 +74,9 @@
       "warning": 30,
       "critical": 11
     },
-        "format": "{icon}    {capacity}%",
-        "format-charging": "   {capacity}%",
-        "format-plugged": "   {capacity}%",
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
         "format-icons": [" ", " ", " ", " ", " "]
   },
@@ -96,19 +95,19 @@
 
 
   "pulseaudio": {
-    "format":"{icon}   {volume}%",
+    "format":"{icon}{volume}%",
 		"tooltip": false,
 		"scroll-step": 5,
-		"format-muted": "{icon} {volume}%",
+		"format-muted": " {volume}%",
 		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol",
-		"format-icons": ["  ", "  ", "  "]
+		"format-icons": [" ", " ", "  "]
 		
   },
 
 
   "tray": {
-    "icon-size": 22,
+    "icon-size": 24,
     "spacing": 6
   },
 }
