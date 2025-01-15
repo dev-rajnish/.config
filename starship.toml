@@ -16,6 +16,7 @@ $time\
 [ ](fg:#1d2230)\
 \n$character"""
 
+add_newline = false
 
 [character]
 success_symbol = '[ ](bold green) '
