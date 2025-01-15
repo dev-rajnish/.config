@@ -5,6 +5,12 @@
 
 !starship.toml
 
+!application/
+!application/**
+
+!bin/
+!bin/**
+
 !ba-sh/
 !ba-sh/**
 
@@ -26,6 +32,9 @@
 
 !nvim/
 !nvim/**
+
+!service-file/
+!service-file/**
 
 !sway/
 !sway/**
