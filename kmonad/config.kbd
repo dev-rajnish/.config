@@ -32,13 +32,13 @@ tab    f1    f2   f3   f4   f5   f6   f7   f8   f9    f10   f11     f12    ins  
 
 grv     1     2    3    4    5    6    7    8    9     0     [       ]     caps
 
-bspc    x     l    d    j    q    .    z    h    -     ;     ,       =     \
+bspc    x     l    d    j    z    .    q    h    -     ;     ,       =     \
 
-@esct   n     r    t    s    g    y    o    a    e     i     u       ret
+@esct   @num-a     r    t    s    g    y    o    a    e     i     u       ret
 
 lsft    c     m    b    w    /    p    f    k    '     v     rsft  up
 
-lctl    fn    lmet lalt           @ark            ralt @num-a  left    down  rght
+lctl    fn    lmet lalt           @ark            ralt rctl  left    down  rght
 
 
 )
@@ -64,11 +64,11 @@ lctl  fn  lmet lalt            spc            ralt rctl left   down  rght
 
 ( defalias
 
-ark (tap-hold-next 250 spc (layer-toggle arrow-keys)) ;;# change arrow key from space
+ark (tap-hold-next 280 spc (layer-toggle arrow-keys)) ;;# change arrow key from space
+
+num-a (tap-hold-next 280 n (layer-toggle number) )
 
 num-r (layer-rem number)
-
-num-a (layer-add number)
 
 qwe-k (layer-switch qwerty)
 
@@ -87,9 +87,9 @@ esct (tap-hold-next 250 esc lctl) ;;# tap -> esc ; hold -> lctl
 
 _    _    _    _    _    _    _     _        _      _       _            _    _    _   _   _
 _    _    _    _    _    _    _     _        _      _       _            _    _    @qwe-k
-del   "    $    %    *   &    ^     #        up     \_       _            _    _    _
+_    "    $    %    *   &    ^     #        up     \_       _            _    _    _
 _    \(    {    [    /    =    +   left     down   rght    rght           :    _ 
-_    \)    }    ]    .    !    @     ,        <      >       ;            _    _ 
+del    \)    }    ]    .    !    @     ,        <      >       ;            _    _ 
 _    _    _    _              spc                           _            _    _    _    _
 
 )
@@ -103,11 +103,11 @@ _    _    _    _              spc                           _            _    _ 
 ;;ec f1   f2   f3   f4   f5   f6    f7       f8     f9      f10       f11      f12 ins print del
 
 _    _    _    _    _    _    _     _        _      _       _         _        _    _   _   _
-_    _    _    _    _    _    _     _        _      _       _         _        _    _
+_    _    _    lsft    _    _    _     _        _      _       _         _        _    _
 _    _    _    _    _    _    _     _        _      5       _         _        _    _
-@num-r    _    _    _    _    _     0        1      2       3         4        5    _ 
+_    _    _    _    _    _     0        1      2       3         4        5    _ 
 _         _    _    _    _    _     _        6      7       8         9        _    _ 
-_    _    _    _              @ark                              _    @num-r    _    _    _
+_    _    _    _              @ark                              _    _    _    _    _
 
 )
 

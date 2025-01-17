@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 16,
+  "height": 0,
   "spacing": 5,
   "modules-left": ["hyprland/workspaces","hyprland/window","sway/mode"],
   "modules-right": ["custom/swaync","custom/wallpaper","idle_inhibitor","network","cpu","memory","battery","backlight","pulseaudio",      "clock","tray"],

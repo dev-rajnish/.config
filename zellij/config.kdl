@@ -138,7 +138,7 @@ keybinds clear-defaults=true {
         bind "Alt ]" { NextSwapLayout; }
         bind "Alt f" { ToggleFloatingPanes; }
         bind "Alt i" { MoveTab "left"; }
-        bind "Alt n" { NewPane; }
+        bind "Shift n" { NewPane; }
         bind "Alt o" { MoveTab "right"; }
     }
     shared_except "scroll" {
@@ -286,7 +286,7 @@ default_mode "normal"
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 // 
-// default_shell "fish"
+ default_shell "fish"
  
 // Choose the path to override cwd that zellij will use for opening new panes
 // 
@@ -356,7 +356,7 @@ default_mode "normal"
 // Examples:
 //
 // copy_command "xclip -selection clipboard" // x11
-// copy_command "wl-copy"                    // wayland
+ copy_command "wl-copy"                    // wayland
 // copy_command "pbcopy"                     // osx
 // 
 // copy_command "pbcopy"

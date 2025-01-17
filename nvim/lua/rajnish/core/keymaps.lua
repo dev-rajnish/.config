@@ -8,7 +8,8 @@ local k = vim.keymap -- for conciseness
 --                              ╰─────────────────╯
 k.set("n", "<leader>w", "", { desc = "write / save" })
 k.set("n", "<leader>ww", "<cmd>w<CR>", { desc = "write / save" })
-k.set("n", "<leader>wq", "<cmd>wqa<CR>", { desc = "save quiet all" })
+k.set("n", "<leader>wQ", "<cmd>wqa<CR>", { desc = "save quiet all" })
+k.set("n", "<leader>wq", "<cmd>wq<CR>", { desc = "save quiet" })
 k.set("n", "<leader>wa", "<cmd>wa<CR>", { desc = "save all" })
 k.set("n", "<leader>q", "", { desc = "quiet" })
 k.set("n", "<leader>qq", "<cmd>q<CR>", { desc = "quiet" })
