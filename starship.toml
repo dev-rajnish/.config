@@ -32,7 +32,7 @@ truncation_symbol = "…/"
 "~" = "󰟒 "
 ".config" = "󰈙 .config"
 "Downloads" = " "
-"Music" = " "
+"Music" = ""
 "Pictures" = " "
 
 [git_branch]

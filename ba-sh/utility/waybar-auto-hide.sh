@@ -1,5 +1,4 @@
-pkill -9 waybar || \
-waybar 
+waybar &
 sleep 10
-pkill -9 waybar
+pkill -9 -x waybar
 
